@@ -3,7 +3,7 @@ threshold_count = 3
 if __name__ == '__main__':
 	count_word = {}
 	words_list = []
-	punctuation_list = ["，", "。", "、", "：", "；", "？", "！","“","「", "」", "（", "）", "『", "』", "＜", "＞"]
+	punctuation_list = ["，", "。", "、", "：", "；", "？", "！","“","「", "」", "（", "）", "『", "』", "＜", "＞", "《", "》"]
 	with open("./icorpus.json") as f:
 		datas = json.load(f)
 	for data in datas:
