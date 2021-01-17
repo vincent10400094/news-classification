@@ -57,6 +57,7 @@ def build_document_matrix(vocab_map, documents, t):
     # normalize to word entropy
     print("Compute entropy...")
     e = compute_normalized_entropy(W, M, N, t)
+    np.save('word_entropy', np.array(e))
     print("Normalizing...")
     for i in range(M):
         for j in range(N):
