@@ -12,7 +12,7 @@ def build_vocabulary_map(vocabulary_path):
             if not line:
                 break
             vocab_map[line[0]] = i
-            t.append(float(line[1]), line[0])
+            t.append((float(line[1]), line[0]))
             i += 1
         f.close()
     print("[+] Number of words:", len(vocab_map))
