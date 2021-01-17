@@ -19,8 +19,13 @@ if __name__ == '__main__':
 				words_list.append(word)
 	with open("./words.txt", "w+") as output:
 		for word in words_list:
-			output.write(word+"\n")
-		
+			output.write(word+" ")
+			output.write(str(count_word[word])+"\n")
+	with open("./documents.txt", "w+") as output:
+		for data in datas:
+			words = data["華語"].split()
+			output.write(' '.join(words)+"\n")
+			
 
 
 
