@@ -130,3 +130,4 @@ dmypy.json
 
 words.txt
 documents.txt
+*.npy
