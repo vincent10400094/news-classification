@@ -4,10 +4,10 @@ from sklearn.cluster import MiniBatchKMeans
 K = 150
 cluster = 100
 if __name__ == '__main__':
-    # W = np.load("W.npy")
-    # U, sigma, VT = la.svd(W)
-    sigma = np.load("sigma.npy")
-    U = np.load("U.npy")
+    W = np.load("W.npy")
+    U, sigma, VT = la.svd(W)
+    # sigma = np.load("sigma.npy")
+    # U = np.load("U.npy")
     epsilon = np.load("word_entropy.npy")
 
     S = np.zeros([K, K])

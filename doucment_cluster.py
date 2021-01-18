@@ -5,10 +5,10 @@ import json
 K = 100
 cluster = 50
 if __name__ == '__main__':
-    # W = np.load("W.npy")
-    # U, sigma, VT = la.svd(W)
-    sigma = np.load("sigma.npy")
-    VT = np.load("VT.npy")
+    W = np.load("W.npy")
+    U, sigma, VT = la.svd(W)
+    # sigma = np.load("sigma.npy")
+    # VT = np.load("VT.npy")
 
     S = np.zeros([K, K])
     for i in range(K):
