@@ -131,3 +131,4 @@ dmypy.json
 *.txt
 *.npy
 .DS_Store
+.png
